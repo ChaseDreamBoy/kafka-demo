@@ -12,4 +12,8 @@ public class KafkaConstant {
 
     static final String BOOTSTRAP_SERVERS = "192.168.0.45:9092";
 
+    static final String SINGLE_GROUP_ID = "mySingleGroupId7";
+
+    static final String MULTI_THREAD_GROUP_ID = "multiThreadGroupId3";
+
 }

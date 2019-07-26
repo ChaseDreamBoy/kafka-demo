@@ -79,6 +79,10 @@ unclean.leader.election.enable=false
 auto.leader.rebalance.enable=false
 
 
-启动 kafka
+# 启动 kafka
 ./bin/kafka-server-start.sh ./config/server.properties &
+
+# 后台启动 kafka
+# 1>/dev/null 2>&1 是将命令产生的输入和错误都输入到空设备，也就是不输出的意思。/dev/null 代表空设备，“/”不要漏掉，否则会报错；
+nohup ./bin/kafka-server-start.sh ./config/server.properties 1>/dev/null 2>&1 &
 </code></pre>
